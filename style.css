@@ -17,8 +17,8 @@
     --text: #1e293b;
     --text-light: #64748b;
     --text-lighter: #94a3b8;
-    --bg: #f8fafc;
-    --card: #ffffff;
+    --bg: #f0f1ff;
+    --card: #f8f9ff;
     --border: #e2e8f0;
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
     --shadow: 0 8px 30px rgba(0,0,0,0.08);
@@ -78,7 +78,7 @@ section { padding: 4rem 0 3rem; }
 }
 
 /* ===== 1. 个人简介 ===== */
-.profile-section { padding-top: 100px; background: var(--bg); }
+.profile-section { padding-top: 100px; background: linear-gradient(180deg, #e8eaff 0%, var(--bg) 100%); }
 .profile-card {
     display: grid; grid-template-columns: 240px 1fr; gap: 2.5rem;
     background: var(--card); border-radius: var(--radius-lg);
@@ -123,7 +123,7 @@ section { padding: 4rem 0 3rem; }
 }
 
 /* ===== 2. 毕业院校 ===== */
-.education-section { background: white; }
+.education-section { background: #f4f5ff; }
 .edu-card {
     background: var(--card); border-radius: var(--radius-lg);
     padding: 2rem 2.5rem; box-shadow: var(--shadow);
@@ -144,7 +144,7 @@ section { padding: 4rem 0 3rem; }
 .edu-detail-icon { font-size: 1rem; }
 
 /* ===== 3. 工作经历 ===== */
-.career-section { background: var(--bg); }
+.career-section { background: linear-gradient(180deg, var(--bg) 0%, #eef0ff 100%); }
 
 .timeline { position: relative; padding-left: 40px; }
 .timeline::before {
@@ -227,7 +227,7 @@ section { padding: 4rem 0 3rem; }
 .work-img-placeholder { color: var(--text-lighter); font-size: 0.85rem; }
 
 /* ===== 6. 能力 ===== */
-.abilities-section { background: white; }
+.abilities-section { background: #f4f5ff; }
 .abilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
 .ability-card {
     background: var(--card); border-radius: var(--radius-lg);
@@ -255,7 +255,7 @@ section { padding: 4rem 0 3rem; }
 }
 
 /* ===== 7. 自我评价 ===== */
-.evaluation-section { background: var(--bg); }
+.evaluation-section { background: linear-gradient(180deg, #eef0ff 0%, #e8eaff 100%); }
 .eval-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
 .eval-card {
     background: var(--card); border-radius: var(--radius); padding: 2rem;
