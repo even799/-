@@ -3,287 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孙学文 - 个人作品集 | Portfolio</title>
+    <title>孙学文 - 个人作品集</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">孙学文的作品集</div>
+            <div class="logo">孙学文</div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">首页</a></li>
-                <li><a href="#about" class="nav-link">关于我</a></li>
-                <li><a href="#skills" class="nav-link">技能</a></li>
-                <li><a href="#projects" class="nav-link">项目</a></li>
-                <li><a href="#contact" class="nav-link">联系</a></li>
+                <li><a href="#profile" class="nav-link">简介</a></li>
+                <li><a href="#education" class="nav-link">院校</a></li>
+                <li><a href="#career" class="nav-link">经历</a></li>
+                <li><a href="#abilities" class="nav-link">能力</a></li>
+                <li><a href="#evaluation" class="nav-link">评价</a></li>
             </ul>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
-    <!-- 主页 Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="wave">👋</span> 你好，我是
-                <span class="highlight">孙学文</span>
-            </h1>
-            <p class="hero-subtitle">快手公益基金会项目部主管 | 公益项目专家 | 数字技能培训推动者</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">查看项目</a>
-                <a href="#contact" class="btn btn-secondary">联系我</a>
-            </div>
-        </div>
-        <div class="hero-animation">
-            <div class="floating-shape shape1"></div>
-            <div class="floating-shape shape2"></div>
-            <div class="floating-shape shape3"></div>
-        </div>
-    </section>
-
-    <!-- 关于我 -->
-    <section id="about" class="about">
+    <!-- 1. 个人简介 -->
+    <section id="profile" class="profile-section">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <svg width="200" height="200" viewBox="0 0 200 200">
-                            <circle cx="100" cy="100" r="90" fill="#6366f1"/>
-                            <text x="100" y="120" font-size="80" text-anchor="middle" fill="white">我</text>
-                        </svg>
+            <div class="profile-card">
+                <div class="profile-photo">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">
+                            <div class="photo-icon">👨</div>
+                            <div class="photo-text">上传照片</div>
+                        </div>
                     </div>
                 </div>
-                <div class="about-text">
-                    <h3>你好！很高兴认识你 👋</h3>
-                    <p>我是<strong>孙学文</strong>，现任<strong>快手公益基金会项目部主管</strong>，专注于公益项目执行与数字技能培训推广。拥有<strong>综艺制作、品牌策划</strong>背景，2025年加入快手企业社会责任部，致力于通过数字化手段推动乡村振兴与银龄群体技能提升。</p>
-                    <p>我的核心优势在于<strong>端到端项目管理</strong>，从前期调研、方案策划，到活动执行、效果评估，全流程把控。擅长用户运营与资源整合，曾从8000人中筛选培养出20名优质讲师，帮助数千人提升数字技能，让公益项目真正落地生根。</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">省份覆盖</div>
+                <div class="profile-info">
+                    <h1 class="profile-name">孙学文</h1>
+                    <div class="profile-badge">快手公益基金会 · 项目部主管</div>
+                    <div class="profile-tags">
+                        <span class="profile-tag">公益项目管理</span>
+                        <span class="profile-tag">数字技能培训</span>
+                        <span class="profile-tag">乡村振兴</span>
+                        <span class="profile-tag">银龄群体赋能</span>
+                    </div>
+                    <div class="profile-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">📍</span>
+                            <span>北京</span>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">2000+</div>
-                            <div class="stat-label">受益人群</div>
+                        <div class="meta-item">
+                            <span class="meta-icon">📧</span>
+                            <span>sunxuewen@kuaishou.com</span>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">核心项目</div>
+                        <div class="meta-item">
+                            <span class="meta-icon">⏱️</span>
+                            <span>3+ 年工作经验</span>
                         </div>
                     </div>
+                    <p class="profile-desc">
+                        专注于公益项目端到端执行，从方案策划到落地评估全流程把控。擅长用户运营与资源整合，曾从8000人中筛选培养出20名优质讲师，帮助数千人提升数字技能，让公益项目真正落地生根。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 技能 -->
-    <section id="skills" class="skills">
+    <!-- 2. 毕业院校 -->
+    <section id="education" class="education-section">
         <div class="container">
-            <h2 class="section-title">技能特长</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">📋</div>
+            <div class="section-header">
+                <div class="section-icon">🎓</div>
+                <h2 class="section-title">毕业院校</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-card">
+                <div class="edu-badge">本科</div>
+                <div class="edu-content">
+                    <h3 class="edu-school">请补充你的毕业院校</h3>
+                    <p class="edu-major">专业：请补充 | 学制：4年</p>
+                    <p class="edu-period">⏱ 20XX年 - 20XX年</p>
+                    <div class="edu-details">
+                        <div class="edu-detail-item">
+                            <span class="edu-detail-icon">🏆</span>
+                            <span>请补充在校荣誉/奖项</span>
+                        </div>
+                        <div class="edu-detail-item">
+                            <span class="edu-detail-icon">📚</span>
+                            <span>请补充相关课程/学术成果</span>
+                        </div>
+                        <div class="edu-detail-item">
+                            <span class="edu-detail-icon">🎯</span>
+                            <span>请补充学生活动/社团经历</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 工作经历 -->
+    <section id="career" class="career-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">💼</div>
+                <h2 class="section-title">工作经历</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- 时间线 -->
+            <div class="timeline">
+                <!-- 第一份工作 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card work-card">
+                        <div class="work-header">
+                            <div class="work-company-logo">
+                                <div class="company-placeholder">请补充</div>
+                            </div>
+                            <div class="work-header-info">
+                                <h3 class="work-company">请补充第一份工作公司名称</h3>
+                                <div class="work-position">综艺制作 & 品牌策划</div>
+                                <div class="work-period">⏱ 2022年 - 2024年</div>
+                            </div>
+                        </div>
+                        <div class="work-divider"></div>
+                        <div class="work-content">
+                            <h4 class="work-subtitle">📋 工作内容</h4>
+                            <ul class="work-list">
+                                <li>负责综艺节目的策划、制作与执行</li>
+                                <li>参与品牌推广活动的创意策划与落地</li>
+                                <li>协调多方资源，保障项目按时交付</li>
+                            </ul>
+                            <h4 class="work-subtitle">🏆 工作成果</h4>
+                            <div class="achievement-grid">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">📺</div>
+                                    <div class="achievement-text">完成多档综艺节目制作</div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">🎯</div>
+                                    <div class="achievement-text">成功策划多个品牌活动</div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">🤝</div>
+                                    <div class="achievement-text">积累了丰富的项目协调经验</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-image-area">
+                            <div class="work-img-placeholder">📌 可添加工作相关图片</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二份工作 -->
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-card work-card current">
+                        <div class="work-current-badge">当前在职</div>
+                        <div class="work-header">
+                            <div class="work-company-logo">
+                                <div class="company-logo-kuaishou">快手</div>
+                            </div>
+                            <div class="work-header-info">
+                                <h3 class="work-company">快手公益基金会</h3>
+                                <div class="work-position">项目部主管（公益项目专员）</div>
+                                <div class="work-period">⏱ 2025年1月 - 至今</div>
+                            </div>
+                        </div>
+                        <div class="work-divider"></div>
+                        <div class="work-content">
+                            <h4 class="work-subtitle">📋 工作内容</h4>
+                            <ul class="work-list">
+                                <li>负责幸福大讲堂银龄学堂项目端到端执行：学员招募、讲师邀约、现场督导、流量扶持</li>
+                                <li>实施师训计划：从8000人筛选至20名讲师，策划北京首期师训活动</li>
+                                <li>推动帮帮学堂2026计划：线上课、普惠型学堂、师训计划、共享直播间四大模块</li>
+                                <li>完善5A评审材料200余套，制作项目展示PPT5个</li>
+                                <li>持续完善课程体系，新增AI相关课程内容</li>
+                            </ul>
+                            <h4 class="work-subtitle">🏆 工作成果</h4>
+                            <div class="achievement-grid">
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">🌍</div>
+                                    <div class="achievement-number">10省</div>
+                                    <div class="achievement-text">银龄学堂覆盖</div>
+                                </div>
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">👥</div>
+                                    <div class="achievement-number">870+</div>
+                                    <div class="achievement-text">累计培训人数</div>
+                                </div>
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">🔥</div>
+                                    <div class="achievement-number">1408万</div>
+                                    <div class="achievement-text">话题曝光量</div>
+                                </div>
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">👨‍🏫</div>
+                                    <div class="achievement-number">20名</div>
+                                    <div class="achievement-text">师训讲师培养</div>
+                                </div>
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">📱</div>
+                                    <div class="achievement-number">65位</div>
+                                    <div class="achievement-text">流量扶持学员</div>
+                                </div>
+                                <div class="achievement-item highlight">
+                                    <div class="achievement-icon">⭐</div>
+                                    <div class="achievement-number">6个</div>
+                                    <div class="achievement-text">10W+粉丝账号</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-image-area">
+                            <div class="work-img-placeholder">📌 可添加项目活动照片</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 实习 -->
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card work-card">
+                        <div class="work-intern-badge">实习</div>
+                        <div class="work-header">
+                            <div class="work-company-logo">
+                                <div class="company-placeholder">请补充</div>
+                            </div>
+                            <div class="work-header-info">
+                                <h3 class="work-company">请补充实习公司名称</h3>
+                                <div class="work-position">请补充实习职位</div>
+                                <div class="work-period">⏱ 请补充实习时间</div>
+                            </div>
+                        </div>
+                        <div class="work-divider"></div>
+                        <div class="work-content">
+                            <h4 class="work-subtitle">📋 实习内容</h4>
+                            <ul class="work-list">
+                                <li>请补充实习期间的工作内容</li>
+                            </ul>
+                            <h4 class="work-subtitle">🏆 实习成果</h4>
+                            <div class="achievement-grid">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">📝</div>
+                                    <div class="achievement-text">请补充实习成果</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 拥有的能力 -->
+    <section id="abilities" class="abilities-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">⚡</div>
+                <h2 class="section-title">拥有的能力</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="abilities-grid">
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">📋</div>
+                    </div>
                     <h3>项目管理</h3>
-                    <div class="skill-tags">
-                        <span class="tag">项目策划</span>
-                        <span class="tag">活动执行</span>
-                        <span class="tag">流程把控</span>
-                        <span class="tag">效果评估</span>
-                        <span class="tag">OKR管理</span>
+                    <p>端到端项目执行，从方案策划到落地评估全流程把控</p>
+                    <div class="ability-detail">
+                        <span>项目策划</span><span>活动执行</span><span>OKR管理</span><span>进度追踪</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="95"></div>
-                    </div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="95"></div></div>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">👥</div>
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">👥</div>
+                    </div>
                     <h3>用户运营</h3>
-                    <div class="skill-tags">
-                        <span class="tag">学员招募</span>
-                        <span class="tag">讲师培养</span>
-                        <span class="tag">流量扶持</span>
-                        <span class="tag">数据追踪</span>
-                        <span class="tag">满意度管理</span>
+                    <p>精准筛选与培养，长期追踪与流量扶持</p>
+                    <div class="ability-detail">
+                        <span>学员招募</span><span>讲师培养</span><span>流量运营</span><span>满意度管理</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="92"></div>
-                    </div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="92"></div></div>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🎓</div>
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">🎓</div>
+                    </div>
                     <h3>课程开发</h3>
-                    <div class="skill-tags">
-                        <span class="tag">课程体系设计</span>
-                        <span class="tag">内容开发</span>
-                        <span class="tag">讲师邀约</span>
-                        <span class="tag">AI课程</span>
-                        <span class="tag">数字技能培训</span>
+                    <p>体系化课程设计，紧跟趋势持续迭代</p>
+                    <div class="ability-detail">
+                        <span>课程体系设计</span><span>内容开发</span><span>AI课程</span><span>数字技能培训</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="88"></div>
-                    </div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="88"></div></div>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🤝</div>
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">🤝</div>
+                    </div>
                     <h3>跨部门协作</h3>
-                    <div class="skill-tags">
-                        <span class="tag">政府对接</span>
-                        <span class="tag">机构合作</span>
-                        <span class="tag">内部协调</span>
-                        <span class="tag">资源整合</span>
-                        <span class="tag">品牌策划</span>
+                    <p>整合多方资源，推动项目高效落地</p>
+                    <div class="ability-detail">
+                        <span>政府对接</span><span>机构合作</span><span>资源整合</span><span>品牌策划</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="90"></div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="90"></div></div>
+                </div>
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">📊</div>
                     </div>
+                    <h3>数据分析</h3>
+                    <p>量化评估项目效果，用数据驱动决策优化</p>
+                    <div class="ability-detail">
+                        <span>效果评估</span><span>用户追踪</span><span>数据复盘</span><span>满意度调查</span>
+                    </div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="85"></div></div>
+                </div>
+                <div class="ability-card">
+                    <div class="ability-icon-wrap">
+                        <div class="ability-icon">🎨</div>
+                    </div>
+                    <h3>创意策划</h3>
+                    <p>综艺制作背景赋予的创意思维与审美能力</p>
+                    <div class="ability-detail">
+                        <span>品牌策划</span><span>内容创意</span><span>PPT制作</span><span>视觉设计</span>
+                    </div>
+                    <div class="ability-bar"><div class="ability-fill" data-progress="87"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 项目作品 -->
-    <section id="projects" class="projects">
+    <!-- 7. 自我评价 -->
+    <section id="evaluation" class="evaluation-section">
         <div class="container">
-            <h2 class="section-title">项目作品</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🎓</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>幸福大讲堂·银龄学堂</h3>
-                        <p>覆盖10省份的数字技能培训项目，累计培训870+人，满意度90%+。负责全流程执行：学员招募、讲师邀约、现场督导、流量扶持。话题曝光量1408.1万次，成功孵化10W+粉丝账号6个。</p>
-                        <div class="project-tags">
-                            <span class="tag">项目执行</span>
-                            <span class="tag">用户运营</span>
-                            <span class="tag">流量运营</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">查看详情 →</a>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <div class="section-icon">💡</div>
+                <h2 class="section-title">自我评价</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="eval-grid">
+                <div class="eval-card">
+                    <div class="eval-icon">🎯</div>
+                    <h3>目标驱动</h3>
+                    <p>以OKR为框架制定工作目标，2025年三大OKR完成度分别达到90%、100%、100%，善于将宏大愿景拆解为可执行路径。</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">👨‍🏫</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>幸福大讲堂·师训计划</h3>
-                        <p>从8000人中筛选并培养20名新媒体讲师。负责北京首期师训活动策划执行，包含场地租赁、物料准备、数字人主持视频制作。学员已完成24场培训，覆盖1995人，10人获百万流量激励。</p>
-                        <div class="project-tags">
-                            <span class="tag">人才培养</span>
-                            <span class="tag">活动策划</span>
-                            <span class="tag">数据追踪</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">查看详情 →</a>
-                        </div>
-                    </div>
+                <div class="eval-card">
+                    <div class="eval-icon">🔥</div>
+                    <h3>执行力强</h3>
+                    <p>从银龄学堂5场线下活动到师训计划北京首期执行，每个项目都亲力亲为，出差督导、现场协调、后期追踪，确保每个环节不掉链。</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🌾</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>帮帮学堂2026计划</h3>
-                        <p>乡村振兴战略下的数字技能提升项目，整合千万资金与30亿平台流量。包含线上课（100万人次）、普惠型学堂（10场1500人）、师训计划（40名讲师60节课）、共享直播间（3个标准化直播间捐建）。</p>
-                        <div class="project-tags">
-                            <span class="tag">战略规划</span>
-                            <span class="tag">多维执行</span>
-                            <span class="tag">资源整合</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">查看详情 →</a>
-                        </div>
-                    </div>
+                <div class="eval-card">
+                    <div class="eval-icon">🌱</div>
+                    <h3>持续成长</h3>
+                    <p>从综艺制作转型公益领域，快速适应新赛道。2026年OKR聚焦课程体系构建与公益机构数字技能培训，持续拓展能力边界。</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">📚</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>5A评审材料整理</h3>
-                        <p>完善200余套项目材料，包括历年工作规划、年度总结报告、执行方案等。负责材料收集、整理、归档，当前进度70%，为基金会评审提供完整的项目执行依据。</p>
-                        <div class="project-tags">
-                            <span class="tag">文档管理</span>
-                            <span class="tag">流程规范</span>
-                            <span class="tag">质量把控</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">查看详情 →</a>
-                        </div>
-                    </div>
+                <div class="eval-card">
+                    <div class="eval-icon">🧩</div>
+                    <h3>资源整合</h3>
+                    <p>善于整合平台千万资金与30亿流量资源，联动政府端与受益人端需求，推动公益项目规模化落地，让每一份资源发挥最大价值。</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- 联系方式 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>让我们一起创造更多社会价值 ✨</h3>
-                    <p>我正在寻找新的机会！如果你对公益项目、数字技能培训或乡村振兴领域感兴趣，欢迎随时联系我，一起探讨合作可能。</p>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <a href="mailto:sunxuewen@kuaishou.com">sunxuewen@kuaishou.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🏢</span>
-                            <span>快手公益基金会 - 项目部</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <span>中国，北京</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" title="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" title="微信">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="姓名" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="邮箱" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="留言" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">发送消息</button>
-                    </form>
-                </div>
+            <div class="eval-quote">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">让公益项目真正落地生根，不是靠口号，而是靠每一个环节的扎实执行。</p>
+                <div class="quote-author">— 孙学文</div>
             </div>
         </div>
     </section>
@@ -291,7 +375,15 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 孙学文的作品集. 用 ❤️ 创作</p>
+            <div class="footer-content">
+                <div class="footer-name">孙学文</div>
+                <div class="footer-links">
+                    <a href="mailto:sunxuewen@kuaishou.com">📧 邮箱</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 孙学文 · 用 ❤️ 创作</p>
+            </div>
         </div>
     </footer>
 
