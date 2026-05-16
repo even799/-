@@ -148,6 +148,14 @@ section { padding: 4rem 0 3rem; }
 .edu-detail-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--text-light); }
 .edu-detail-icon { font-size: 1rem; }
 
+/* 教育 - 成绩表格 */
+.edu-grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin: 1rem 0; }
+.edu-grade { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.6rem; background: #eef2ff; border-radius: 8px; font-size: 0.85rem; }
+.edu-grade .grade-course { color: var(--text); font-weight: 500; }
+.edu-grade .grade-score { color: var(--primary); font-weight: 700; font-size: 1rem; }
+.edu-honors { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.honor-tag { padding: 0.3rem 0.8rem; background: var(--gradient); color: white; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
 /* ===== 3. 工作经历 ===== */
 .career-section { background: linear-gradient(180deg, var(--bg) 0%, #eef0ff 100%); }
 
@@ -194,6 +202,10 @@ section { padding: 4rem 0 3rem; }
 }
 .company-placeholder { font-size: 0.7rem; text-align: center; color: var(--text-lighter); }
 .company-logo-kuaishou { font-weight: 800; font-size: 1rem; }
+.kw-logo {
+    background: linear-gradient(135deg, #ff4906, #ff8a00); color: white;
+    font-weight: 800; font-size: 0.85rem;
+}
 .work-header-info { flex: 1; }
 .work-company { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.2rem; }
 .work-position { font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.3rem; }
