@@ -100,7 +100,7 @@ section { padding: 4rem 0 3rem; }
     background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
 }
 .profile-img {
-    width: 100%; height: 100%; object-fit: cover;
+    width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
 }
 .profile-name {
     font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem;
