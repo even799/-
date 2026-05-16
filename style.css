@@ -147,9 +147,16 @@ section { padding: 4rem 0 3rem; }
     color: var(--primary); border-radius: 20px; font-size: 0.82rem;
     font-weight: 600; background: #eef2ff;
 }
-.edu-grades { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+.edu-grades {
+    background: #f8faff; border: 1px solid #e0e7ff; border-radius: 12px;
+    padding: 0.8rem 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem;
+}
+.grades-label {
+    width: 100%; font-size: 0.78rem; color: var(--text-lighter);
+    font-weight: 600; margin-bottom: 0.3rem; letter-spacing: 0.5px;
+}
 .grade-item { font-size: 0.85rem; color: var(--text-light); }
-.grade-item b { color: var(--primary); margin-left: 2px; }
+.grade-item b { color: var(--primary); }
 
 /* ===== 3. 工作经历 ===== */
 .career-section { background: linear-gradient(180deg, var(--bg) 0%, #eef0ff 100%); }
