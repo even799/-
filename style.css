@@ -240,6 +240,17 @@ section { padding: 4rem 0 3rem; }
 .achievement-unit { font-size: 0.9rem; font-weight: 700; }
 .achievement-text { font-size: 0.78rem; opacity: 0.9; }
 
+/* 工作成果文字描述 */
+.work-results-text {
+    margin-top: 1rem; padding: 1rem; background: #f8faff;
+    border-radius: 10px; border-left: 3px solid var(--primary-light);
+}
+.work-results-text p {
+    font-size: 0.85rem; color: var(--text-light); line-height: 1.8; margin-bottom: 0.4rem;
+}
+.work-results-text p:last-child { margin-bottom: 0; }
+.work-results-text strong { color: var(--primary); }
+
 .work-image-area {
     margin-top: 1rem; border-radius: 12px;
     background: #f1f5f9; height: 120px;
