@@ -32,21 +32,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ========== 鼠标跟随彩色光晕 ==========
-const glow = document.createElement('div');
-glow.className = 'mouse-glow';
-document.body.appendChild(glow);
-let mouseX = 0, mouseY = 0;
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-function animateGlow() {
-    glow.style.transform = `translate(${mouseX - 150}px, ${mouseY - 150}px)`;
-    requestAnimationFrame(animateGlow);
-}
-animateGlow();
-
 // ========== 数字滚动动画 ==========
 function animateNumbers() {
     document.querySelectorAll('[data-count]').forEach(el => {
