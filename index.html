@@ -3,281 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孙学文 - 个人作品集</title>
-    <link rel="stylesheet" href="style.css?v=10">
+    <title>孙学文 · 个人作品集</title>
+    <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
-    <!-- 动态背景光晕 -->
-    <div class="bg-glow g1"></div>
-    <div class="bg-glow g2"></div>
-    <div class="bg-glow g3"></div>
-    <!-- 粒子背景 -->
-    <canvas id="particles"></canvas>
-
-    <div class="app-container">
-        <!-- 左侧：个人简介 -->
-        <aside class="sidebar">
-            <!-- 个人信息卡 -->
-            <div class="profile-card">
-                <div class="avatar">
-                    <img src="images/photo.jpg" alt="孙学文">
-                </div>
-                <h1 class="name">孙学文</h1>
-                <div class="title-badge">快手公益基金会 · 项目二部主管</div>
-                <p class="bio">
-                    三年职场深耕，从品牌策划到公益项目全案管理，秉承"科技向善"理念。擅长将CSR转化为高影响力公益品牌资产，精通"内容+活动+传播"的公关打法。
-                </p>
-            </div>
-
-            <!-- 联系方式卡 -->
-            <div class="contact-card">
-                <div class="contact-item">
-                    <div class="contact-icon ci-purple">📍</div>
-                    <div>
-                        <div class="contact-label">所在地</div>
-                        <div class="contact-value">北京</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon ci-amber">🎂</div>
-                    <div>
-                        <div class="contact-label">年龄</div>
-                        <div class="contact-value">26岁 · 汉族</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon ci-cyan">👨‍💼</div>
-                    <div>
-                        <div class="contact-label">身高体重</div>
-                        <div class="contact-value">190cm · 83kg</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon ci-rose">📧</div>
-                    <div>
-                        <div class="contact-label">邮箱</div>
-                        <div class="contact-value">stavnxxx@163.com</div>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon ci-green">📱</div>
-                    <div>
-                        <div class="contact-label">电话</div>
-                        <div class="contact-value">15610321009</div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- 右侧：Tab 内容区 -->
-        <main class="content">
-            <!-- Tab 导航 -->
-            <nav class="tab-nav">
-                <button class="tab-btn active" data-tab="education">🎓 教育背景</button>
-                <button class="tab-btn" data-tab="career">💼 工作经历</button>
-                <button class="tab-btn" data-tab="skills">⚡ 能力证书</button>
-                <button class="tab-btn" data-tab="eval">💡 自我评价</button>
+    <div class="app">
+        <!-- 顶部极简导航 -->
+        <header class="topbar">
+            <a href="#" class="nav-logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="15" fill="#1a1a2e"/>
+                        <!-- 脸 -->
+                        <circle cx="16" cy="15" r="6" fill="white"/>
+                        <!-- 眼 -->
+                        <ellipse cx="13.5" cy="14" rx="1.5" ry="2" fill="#1a1a2e"/>
+                        <ellipse cx="18.5" cy="14" rx="1.5" ry="2" fill="#1a1a2e"/>
+                        <!-- 嘴 -->
+                        <rect x="13.5" y="18" width="5" height="1.5" rx="0.75" fill="#1a1a2e"/>
+                        <!-- 腮红 -->
+                        <circle cx="10.5" cy="16" r="1.2" fill="#ffb3c1" opacity="0.6"/>
+                        <circle cx="21.5" cy="16" r="1.2" fill="#ffb3c1" opacity="0.6"/>
+                    </svg>
+                </a>
+            <nav class="tabs">
+                <button class="tab active" data-tab="about">关于我</button>
+                <button class="tab" data-tab="education">教育背景</button>
+                <button class="tab" data-tab="career">工作经历</button>
+                <button class="tab" data-tab="skills">技能特长</button>
+                <button class="tab" data-tab="explore">学习与探索</button>
             </nav>
+        </header>
 
-            <!-- 教育背景 -->
-            <div class="tab-panel active" id="tab-education">
-                <div class="content-card">
-                    <h3 class="card-school">四川电影电视学院</h3>
-                    <div class="card-major">文化产业管理 · 本科 &nbsp;|&nbsp; 2018 - 2023</div>
-                    <div class="honor-row">
-                        <span class="honor">🏆 学院二等奖学金</span>
-                        <span class="honor">⭐ 三好学生</span>
+        <!-- 内容区 -->
+        <main class="main">
+            <!-- ===== 关于我 ===== -->
+            <div class="panel active" id="panel-about">
+                <div class="about-layout">
+                    <div class="about-text">
+                        <p class="about-greeting">👋 你好，我是</p>
+                        <h1>孙学文</h1>
+                        <p class="about-role">快手公益基金会 · 项目二部主管</p>
+                        <p class="about-bio">三年职场深耕，从品牌策划到公益项目全案管理，秉承"科技向善"理念。擅长将CSR转化为高影响力公益品牌资产，精通"内容+活动+传播"的公关打法。</p>
+                        <div class="about-info">
+                            <span>📍 北京</span>
+                            <span>🎂 26岁 · 汉族</span>
+                            <span>👨‍💼 190cm · 83kg</span>
+                        </div>
+                        <div class="about-contact">
+                            <span>stavnxxx@163.com</span>
+                            <span>15610321009</span>
+                        </div>
                     </div>
-                    <div class="grades-box">
-                        <div class="grades-title">核心课程成绩</div>
-                        <div class="grades">
-                            <span>广告创意与策划 <b>97分</b></span>
-                            <span>影视制作实务 <b>94分</b></span>
-                            <span>影视包装与策划 <b>92分</b></span>
-                            <span>公共关系学 <b>91分</b></span>
-                            <span>文化项目运营与管理 <b>87分</b></span>
-                            <span>影视制片管理 <b>87分</b></span>
-                            <span>文化政策法律与法规 <b>84分</b></span>
+                    <div class="about-photo">
+                        <svg class="line-art" viewBox="0 0 280 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- 显示器 -->
+                            <rect x="150" y="210" width="85" height="60" rx="6" fill="white" stroke="#1a1a2e" stroke-width="2.5"/>
+                            <rect x="165" y="225" width="55" height="35" rx="2" fill="rgba(99,102,241,0.08)"/>
+                            <!-- 屏幕代码行 -->
+                            <rect x="172" y="232" width="28" height="3" rx="1" fill="rgba(99,102,241,0.3)"/>
+                            <rect x="172" y="240" width="38" height="3" rx="1" fill="rgba(99,102,241,0.2)"/>
+                            <rect x="172" y="248" width="20" height="3" rx="1" fill="rgba(99,102,241,0.15)"/>
+                            <!-- 显示器底座 -->
+                            <rect x="185" y="270" width="15" height="4" rx="2" fill="#1a1a2e"/>
+                            <rect x="178" y="274" width="29" height="5" rx="3" fill="#1a1a2e"/>
+                            <!-- 桌面 -->
+                            <rect x="130" y="278" width="130" height="8" rx="4" fill="white" stroke="#1a1a2e" stroke-width="2"/>
+                            <!-- 桌腿 -->
+                            <rect x="155" y="286" width="6" height="55" rx="2" fill="#1a1a2e" opacity="0.3"/>
+                            <rect x="230" y="286" width="6" height="55" rx="2" fill="#1a1a2e" opacity="0.3"/>
+                            <!-- 人体 -->
+                            <!-- 头部 -->
+                            <circle cx="120" cy="190" r="30" fill="white" stroke="#1a1a2e" stroke-width="2.5"/>
+                            <!-- 头发（简约短发） -->
+                            <path d="M90 185 Q90 155 120 158 Q150 155 150 185" fill="#1a1a2e"/>
+                            <path d="M90 185 Q90 170 95 165 Q98 162 100 168 Q100 175 90 185" fill="#1a1a2e"/>
+                            <!-- 身体 -->
+                            <rect x="98" y="218" width="44" height="55" rx="8" fill="white" stroke="#1a1a2e" stroke-width="2.5"/>
+                            <!-- 手臂 -->
+                            <path d="M100 230 L75 255 A5 5 0 0 1 85 260 L142 260" fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M140 230 L155 245 L160 240" fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- 手臂（放在键盘上） -->
+                            <path d="M142 235 Q155 245 168 250" fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                            <!-- 脸 -->
+                            <circle cx="110" cy="186" r="2.5" fill="#1a1a2e"/>
+                            <circle cx="130" cy="186" r="2.5" fill="#1a1a2e"/>
+                            <path d="M114 198 Q120 204 126 198" fill="none" stroke="#1a1a2e" stroke-width="1.8" stroke-linecap="round"/>
+                            <!-- 腮红 -->
+                            <circle cx="104" cy="194" r="3" fill="rgba(244,114,182,0.2)"/>
+                            <circle cx="136" cy="194" r="3" fill="rgba(244,114,182,0.2)"/>
+                            <!-- 键盘 -->
+                            <rect x="155" y="255" width="50" height="14" rx="3" fill="#f1f1f5" stroke="#1a1a2e" stroke-width="1.5"/>
+                            <rect x="160" y="259" width="40" height="6" rx="1" fill="rgba(99,102,241,0.1)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 教育背景 ===== -->
+            <div class="panel" id="panel-education">
+                <div class="edu-section">
+                    <h2>四川电影电视学院</h2>
+                    <p class="edu-sub">文化产业管理 · 本科 · 2018 — 2023</p>
+                    <div class="edu-tags">
+                        <span>🏆 学院二等奖学金</span>
+                        <span>⭐ 三好学生</span>
+                    </div>
+                    <div class="edu-scores">
+                        <span class="score-label">核心课程成绩</span>
+                        <div class="score-list">
+                            <span class="score">广告创意与策划 <em>97</em></span>
+                            <span class="score">影视制作实务 <em>94</em></span>
+                            <span class="score">影视包装与策划 <em>92</em></span>
+                            <span class="score">公共关系学 <em>91</em></span>
+                            <span class="score">文化项目运营与管理 <em>87</em></span>
+                            <span class="score">影视制片管理 <em>87</em></span>
+                            <span class="score">文化政策法律与法规 <em>84</em></span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 工作经历 -->
-            <div class="tab-panel" id="tab-career">
+            <!-- ===== 工作经历 ===== -->
+            <div class="panel" id="panel-career">
                 <!-- 快手 -->
-                <div class="content-card job-card current">
-                    <div class="job-badge">当前在职</div>
-                    <div class="job-header">
-                        <img src="images/kw-logo.png" alt="快手" class="job-logo">
+                <div class="job current">
+                    <div class="job-top">
+                        <img src="images/kw-logo.png" alt="快手">
                         <div>
                             <h3>快手企业社会责任部</h3>
-                            <div class="job-role">快手公益基金会 · 项目二部主管</div>
-                            <div class="job-time">2025.01 - 至今</div>
+                            <p class="job-title">快手公益基金会 · 项目二部主管</p>
+                            <p class="job-date">2025.01 — 至今</p>
                         </div>
                     </div>
-                    <div class="job-body">
-                        <h4>📋 品牌建设</h4>
-                        <ul>
-                            <li>负责「幸福大讲堂」公益项目品牌战略规划与整合营销</li>
-                            <li>构建"普惠型学堂 + 师训计划 + 共享直播间"项目逻辑</li>
-                            <li>制定公益项目管理与执行SOP，统一对外传播口径</li>
-                            <li>跨部门协同联动快手三农、电商、直播等业务线</li>
-                        </ul>
-                        <h4>📡 话题传播</h4>
-                        <ul>
-                            <li>联动快手高粉达人开展内容共创与任务挑战赛，撬动UGC生产</li>
-                        </ul>
-                        <h4>🏆 成果</h4>
-                        <div class="result-grid">
-                            <div class="result-num"><em>50+</em><span>市县覆盖</span></div>
-                            <div class="result-num"><em>200万</em><span>人次覆盖</span></div>
-                            <div class="result-num"><em>3位</em><span>百万粉学员</span></div>
-                            <div class="result-num"><em>2048万</em><span>话题播放</span></div>
-                            <div class="result-num"><em>30亿+</em><span>#老铁帮老铁</span></div>
-                            <div class="result-num"><em>10+奖</em><span>国家/行业奖</span></div>
+                    <div class="job-content">
+                        <div class="job-section">
+                            <h5>品牌建设</h5>
+                            <p>负责「幸福大讲堂」公益项目品牌战略规划与整合营销，构建"普惠型学堂+师训计划+共享直播间"项目逻辑，制定公益项目管理与执行SOP，跨部门协同联动快手三农、电商、直播等业务线。</p>
                         </div>
-                        <div class="job-note">
-                            <p>获新华网、公益时报等主流媒体报道十余次，收获十余封政府感谢信。项目获中国新媒体公益十大优秀案例、北京网络视听企业社会责任十大优秀案例、全球减贫最佳案例、入选清华《企业参与乡村振兴案例精选》。话题#老铁帮老铁 播放30.4亿次，新增近20万条UGC。</p>
+                        <div class="job-section">
+                            <h5>话题传播</h5>
+                            <p>联动快手高粉达人开展内容共创与任务挑战赛，撬动UGC生产。</p>
                         </div>
+                        <div class="job-nums">
+                            <div class="num"><strong>50+</strong><small>市县覆盖</small></div>
+                            <div class="num"><strong>200万</strong><small>人次覆盖</small></div>
+                            <div class="num"><strong>3位</strong><small>百万粉学员</small></div>
+                            <div class="num"><strong>2048万</strong><small>话题播放</small></div>
+                            <div class="num"><strong>30亿+</strong><small>老铁帮老铁</small></div>
+                            <div class="num"><strong>10+奖</strong><small>国家/行业奖</small></div>
+                        </div>
+                        <p class="job-note">获新华网、公益时报等主流媒体报道十余次，收获十余封政府感谢信。项目获中国新媒体公益十大优秀案例、北京网络视听企业社会责任十大优秀案例、全球减贫最佳案例，入选清华《企业参与乡村振兴案例精选》。</p>
                     </div>
                 </div>
 
                 <!-- REFLASH -->
-                <div class="content-card job-card">
-                    <div class="job-header">
-                        <img src="images/rf-logo.jpg" alt="REFLASH" class="job-logo">
+                <div class="job">
+                    <div class="job-top">
+                        <img src="images/rf-logo.jpg" alt="REFLASH">
                         <div>
                             <h3>REFLASH STUDIO</h3>
-                            <div class="job-role">杭州菲林拾影文化创意有限公司 · 策划</div>
-                            <div class="job-time">2023.06 - 2024.10</div>
+                            <p class="job-title">杭州菲林拾影文化创意有限公司 · 策划</p>
+                            <p class="job-date">2023.06 — 2024.10</p>
                         </div>
                     </div>
-                    <div class="job-body">
-                        <h4>🛍️ 品牌产品策划</h4>
-                        <ul>
-                            <li>从0到1孵化品牌SSoA，主导品牌全案策划</li>
-                            <li>完成市场调研、竞品分析及供应链搭建</li>
-                            <li>独立搭建并运营品牌新媒体矩阵</li>
-                        </ul>
-                        <h4>🎨 艺文活动策划</h4>
-                        <ul>
-                            <li>全流程主导两场商业艺术展览（杭州仓美术馆 & 天目里）</li>
-                        </ul>
-                        <h4>🏆 成果</h4>
-                        <div class="result-grid">
-                            <div class="result-num"><em>2000+</em><span>「问题是」观展</span></div>
-                            <div class="result-num"><em>4000+</em><span>「有所建树」观展</span></div>
-                            <div class="result-num"><em>第1名</em><span>大麦热门榜</span></div>
-                            <div class="result-num"><em>9.8分</em><span>大麦评分</span></div>
+                    <div class="job-content">
+                        <div class="job-section">
+                            <h5>品牌产品策划</h5>
+                            <p>从0到1孵化品牌SSoA，主导品牌全案策划，完成市场调研、竞品分析及供应链搭建，独立搭建并运营品牌新媒体矩阵。</p>
                         </div>
-                        <div class="job-note">
-                            <p>两场展览均登顶大麦同期热门榜第1名，获9.8分高分评价。</p>
+                        <div class="job-section">
+                            <h5>艺文活动策划</h5>
+                            <p>全流程主导两场商业艺术展览（杭州仓美术馆 & 天目里）。</p>
                         </div>
+                        <div class="job-nums">
+                            <div class="num"><strong>2000+</strong><small>「问题是」观展</small></div>
+                            <div class="num"><strong>4000+</strong><small>「有所建树」观展</small></div>
+                            <div class="num"><strong>第1名</strong><small>大麦热门榜</small></div>
+                            <div class="num"><strong>9.8分</strong><small>大麦评分</small></div>
+                        </div>
+                        <p class="job-note">两场展览均登顶大麦同期热门榜第1名，获9.8分高分评价。</p>
                     </div>
                 </div>
 
                 <!-- BKW -->
-                <div class="content-card job-card">
-                    <div class="job-badge badge-intern">实习</div>
-                    <div class="job-header">
-                        <img src="images/bkw-logo.jpg" alt="BKW" class="job-logo">
+                <div class="job">
+                    <div class="job-top">
+                        <img src="images/bkw-logo.jpg" alt="BKW">
                         <div>
                             <h3>BKW Studio</h3>
-                            <div class="job-role">北京黑威兰影视文化传播有限公司 · 影视策划</div>
-                            <div class="job-time">2022.07 - 2023.05</div>
+                            <p class="job-title">北京黑威兰影视文化传播有限公司 · 影视策划</p>
+                            <p class="job-date">2022.07 — 2023.05</p>
                         </div>
                     </div>
-                    <div class="job-body">
-                        <h4>🎬 影视项目策划</h4>
-                        <ul>
-                            <li>参与B站综艺《轰隆隆隆遇见你》《GQ：红毯背后》及纪录片《杀马特》</li>
-                            <li>负责剧本内容搭建、选角支持、预算制定与制片执行</li>
-                        </ul>
-                        <h4>🏆 成果</h4>
-                        <div class="result-grid">
-                            <div class="result-num"><em>4733万</em><span>轰隆隆隆遇见你</span></div>
-                            <div class="result-num"><em>1824万</em><span>GQ红毯背后</span></div>
-                            <div class="result-num"><em>15.6万</em><span>杀马特</span></div>
-                            <div class="result-num"><em>🎬</em><span>谢菲尔德电影节</span></div>
+                    <div class="job-content">
+                        <div class="job-section">
+                            <h5>影视项目策划</h5>
+                            <p>参与B站综艺《轰隆隆隆遇见你》《GQ：红毯背后》及纪录片《杀马特》，负责剧本内容搭建、选角支持、预算制定与制片执行。</p>
                         </div>
-                        <div class="job-note">
-                            <p>《轰隆隆隆遇见你》4733.3万播放、17.4万赞；《GQ：红毯背后》1824.3万播放、29.6万赞。《杀马特》入选谢菲尔德纪录片电影节。</p>
+                        <div class="job-nums">
+                            <div class="num"><strong>4733万</strong><small>轰隆隆隆遇见你</small></div>
+                            <div class="num"><strong>1824万</strong><small>GQ红毯背后</small></div>
+                            <div class="num"><strong>15.6万</strong><small>杀马特</small></div>
+                            <div class="num"><strong>🎬</strong><small>谢菲尔德电影节</small></div>
                         </div>
+                        <p class="job-note">《轰隆隆隆遇见你》4733.3万播放、17.4万赞；《GQ：红毯背后》1824.3万播放、29.6万赞。《杀马特》入选谢菲尔德纪录片电影节。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 能力证书 -->
-            <div class="tab-panel" id="tab-skills">
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="sk-icon">📋</div>
-                        <h3>品牌战略与全案策划</h3>
+            <!-- ===== 技能特长 ===== -->
+            <div class="panel" id="panel-skills">
+                <div class="skill-grid">
+                    <div class="skill">
+                        <span class="skill-num">01</span>
+                        <h4>品牌战略与全案策划</h4>
                         <p>品牌战略规划、整合传播与内容营销，将CSR转化为高影响力公益品牌资产</p>
-                        <div class="sk-tags"><span>品牌全案</span><span>内容营销</span><span>CSR传播</span><span>公关策略</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="sk-icon">🎯</div>
-                        <h3>活动策划与执行</h3>
+                    <div class="skill">
+                        <span class="skill-num">02</span>
+                        <h4>活动策划与执行</h4>
                         <p>大型线下活动全流程管理，策展、空间设计到现场布展与应急管理</p>
-                        <div class="sk-tags"><span>策展</span><span>布展执行</span><span>SOP制定</span><span>KOL合作</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="sk-icon">🎬</div>
-                        <h3>影视项目策划</h3>
+                    <div class="skill">
+                        <span class="skill-num">03</span>
+                        <h4>影视项目策划</h4>
                         <p>综艺/纪录片策划执行，剧本搭建、选角、预算制定与制片全流程</p>
-                        <div class="sk-tags"><span>剧本策划</span><span>制片执行</span><span>预算管控</span><span>数据复盘</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="sk-icon">👥</div>
-                        <h3>跨部门协同</h3>
+                    <div class="skill">
+                        <span class="skill-num">04</span>
+                        <h4>跨部门协同</h4>
                         <p>政府关系对接、平台达人资源、常态化跨部门协作</p>
-                        <div class="sk-tags"><span>政府对接</span><span>达人资源</span><span>跨部门协同</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="sk-icon">🛠️</div>
-                        <h3>工具技能</h3>
+                    <div class="skill">
+                        <span class="skill-num">05</span>
+                        <h4>工具技能</h4>
                         <p>PR、剪映、LR、PPT/Excel/Word 熟练，普通话一级乙等</p>
-                        <div class="sk-tags"><span>PR</span><span>剪映</span><span>LR</span><span>Office</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="sk-icon">🤖</div>
-                        <h3>AI 工具应用</h3>
+                    <div class="skill">
+                        <span class="skill-num">06</span>
+                        <h4>AI 工具应用</h4>
                         <p>熟练掌握各类AI工具，持续探索AI在公益领域的创新应用</p>
-                        <div class="sk-tags"><span>AI工具</span><span>内容创作</span><span>效率提升</span></div>
                     </div>
-                </div>
-            </div>
-
-            <!-- 自我评价 -->
-            <div class="tab-panel" id="tab-eval">
-                <div class="eval-cards">
-                    <div class="eval-card2">
-                        <div class="ev-icon">🎯</div>
-                        <h3>专业能力</h3>
+                    <div class="skill">
+                        <span class="skill-num">07</span>
+                        <h4>专业能力</h4>
                         <p>具备品牌战略与全案策划、整合传播与内容营销能力，精通"内容+活动+传播"公关打法，熟悉CSR与ESG传播逻辑。</p>
                     </div>
-                    <div class="eval-card2">
-                        <div class="ev-icon">🤝</div>
-                        <h3>组织能力</h3>
+                    <div class="skill">
+                        <span class="skill-num">08</span>
+                        <h4>组织能力</h4>
                         <p>较深的政府关系与达人资源，强跨部门协同能力，参与多个大型线下活动，制定标准SOP。</p>
                     </div>
-                    <div class="eval-card2">
-                        <div class="ev-icon">🔥</div>
-                        <h3>性格品质</h3>
+                    <div class="skill">
+                        <span class="skill-num">09</span>
+                        <h4>性格品质</h4>
                         <p>恪守职业道德、自我驱动力强、积极主动、认真细心、优秀的独立学习和工作能力。</p>
                     </div>
-                    <div class="eval-card2">
-                        <div class="ev-icon">📈</div>
-                        <h3>综合素养</h3>
+                    <div class="skill">
+                        <span class="skill-num">10</span>
+                        <h4>综合素养</h4>
                         <p>擅于跨领域融合——从影视策划到品牌创意再到公益项目管理，拥有独特跨界视角与审美能力。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 学习与探索 ===== -->
+            <div class="panel" id="panel-explore">
+                <div class="explore-grid">
+                    <div class="explore">
+                        <h4>📚 公益领域深耕</h4>
+                        <p>深入学习CSR、ESG理念与实践，研究企业公益品牌建设方法论，探索"科技+公益"的创新模式</p>
+                    </div>
+                    <div class="explore">
+                        <h4>🤖 AI 赋能工作流</h4>
+                        <p>探索AI工具在内容创作、数据分析、项目管理等场景的应用，提升工作效率与产出质量</p>
+                    </div>
+                    <div class="explore">
+                        <h4>🎨 创意审美积累</h4>
+                        <p>持续关注艺术展览、影视作品、品牌营销案例，保持对美学的敏感度和创造力</p>
+                    </div>
+                    <div class="explore">
+                        <h4>🌐 行业视野拓展</h4>
+                        <p>关注互联网平台社会责任、乡村振兴、公益传播等前沿议题，参与行业交流与案例研究</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 
-    <script src="script.js?v=10"></script>
+    <script src="script.js?v=15"></script>
 </body>
 </html>
