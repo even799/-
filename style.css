@@ -45,7 +45,8 @@ body {
 .about-text { flex: 1; }
 .about-greeting { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.3rem; font-weight: 600; }
 .about-text h1 { font-size: 3.6rem; font-weight: 900; margin-bottom: 0.4rem; letter-spacing: 0.02em; line-height: 1.05; }
-.about-role { font-size: 1rem; color: var(--accent); font-weight: 600; margin-bottom: 1.4rem; }
+.about-role { font-size: 1rem; color: var(--accent); font-weight: 600; margin-bottom: 0.6rem; }
+.about-tags { font-size: 0.82rem; color: var(--text-mid); margin-bottom: 1.2rem; letter-spacing: 0.02em; }
 .about-bio { font-size: 0.98rem; color: var(--text-mid); line-height: 1.9; margin-bottom: 1.6rem; max-width: 460px; }
 .about-info { display: flex; gap: 1.6rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
 .about-info span { font-size: 0.88rem; color: var(--text-light); }
@@ -238,6 +239,7 @@ body {
 
 /* ===== 技能特长 ===== */
 .skill-cat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+.skill-cat-grid.skill-cat-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .skill-cat {
     background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
     padding: 1.5rem; transition: box-shadow 0.25s;
