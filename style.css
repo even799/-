@@ -262,6 +262,15 @@ body {
     object-fit: cover;
 }
 
+/* 完整显示图片（不裁剪） */
+.inline-photo-grid figure.full-img img {
+    aspect-ratio: auto;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    background: var(--bg);
+}
+
 /* ===== 技能特长 ===== */
 .skill-cat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .skill-cat-grid.skill-cat-grid-3 { grid-template-columns: repeat(3, 1fr); }
