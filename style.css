@@ -262,6 +262,26 @@ body {
 .result-list li:last-child { margin-bottom: 0; }
 .result-list li strong { color: var(--accent); font-weight: 700; }
 
+/* 活动分组样式 */
+.activity-group {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    background: var(--bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+.activity-group h6 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border);
+}
+.activity-group .inline-photo-grid {
+    margin-top: 0;
+}
+
 /* 滚动图片 */
 .scrollable-img {
     max-height: 400px;
