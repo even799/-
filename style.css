@@ -250,6 +250,17 @@ body {
     font-size: 0.84rem; color: var(--text-mid); line-height: 1.8;
     padding-top: 0.85rem; border-top: 1px dashed var(--border);
 }
+.result-list {
+    font-size: 0.84rem; color: var(--text-mid); line-height: 1.9;
+    padding-top: 0.85rem; border-top: 1px dashed var(--border);
+    margin: 0; padding-left: 1.2rem;
+}
+.result-list li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+.result-list li:last-child { margin-bottom: 0; }
+.result-list li strong { color: var(--accent); font-weight: 700; }
 
 /* 滚动图片 */
 .scrollable-img {
