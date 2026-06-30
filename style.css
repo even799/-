@@ -251,6 +251,17 @@ body {
     padding-top: 0.85rem; border-top: 1px dashed var(--border);
 }
 
+/* 滚动图片 */
+.scrollable-img {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.scrollable-img img {
+    max-height: none;
+    object-fit: cover;
+}
+
 /* ===== 技能特长 ===== */
 .skill-cat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .skill-cat-grid.skill-cat-grid-3 { grid-template-columns: repeat(3, 1fr); }
