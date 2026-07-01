@@ -306,11 +306,9 @@ body {
 .auto-img-grid figure img {
     width: 100%;
     height: 100%;
-    object-fit: contain !important;
+    object-fit: cover !important;
     aspect-ratio: auto !important;
     border-radius: 10px;
-    border: none;
-    background: transparent;
     display: block;
     cursor: zoom-in;
 }
