@@ -270,6 +270,15 @@ body {
     border-radius: 10px;
     border: 1px solid var(--border);
 }
+
+/* 展览图片：完整展示，不裁剪 */
+.exhibition-grid figure img {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    max-height: 420px;
+    object-fit: contain !important;
+    width: 100%;
+}
 .activity-group h6 {
     font-size: 0.85rem;
     font-weight: 700;
