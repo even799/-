@@ -280,6 +280,7 @@ body {
     width: 100%;
     background: transparent !important;
     border-color: transparent !important;
+    border-radius: 10px !important;
 }
 .activity-group h6 {
     font-size: 0.85rem;
