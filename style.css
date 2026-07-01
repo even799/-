@@ -271,16 +271,20 @@ body {
     border: 1px solid var(--border);
 }
 
-/* 展览图片：完整展示，不裁剪 */
+/* 展览图片：竖图 3:4 比例展示，完整裁剪+圆角，与其他图片风格一致 */
 .exhibition-grid figure img {
-    aspect-ratio: auto !important;
-    height: auto !important;
-    max-height: 420px;
-    object-fit: contain !important;
+    aspect-ratio: 3 / 4 !important;
+    object-fit: cover !important;
     width: 100%;
-    background: transparent !important;
-    border-color: transparent !important;
-    border-radius: 10px !important;
+    border-radius: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: zoom-in;
+}
+.exhibition-grid figure img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 .activity-group h6 {
     font-size: 0.85rem;
