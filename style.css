@@ -293,6 +293,7 @@ body {
     gap: 0.6rem;
     margin-top: 0.85rem;
     align-items: flex-end;
+    justify-content: center;
 }
 .auto-img-grid figure {
     margin: 0;
